@@ -1,0 +1,11 @@
+runtime: go
+api_version: go1
+service: taskqueue-research-task
+
+handlers:
+- url: /.*
+  script: _go_app
+
+basic_scaling:
+  idle_timeout: 60m
+  max_instances: 3

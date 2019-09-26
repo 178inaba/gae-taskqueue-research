@@ -1,0 +1,4 @@
+queue:
+- name: taskqueue-research-queue
+  target: taskqueue-research-task
+  rate: 1/s
